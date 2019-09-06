@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ксения Прохорова](https://up.htmlacademy.ru/htmlcss/26/user/953139).
-* Наставник: [Виктор Кульбакин](https://htmlacademy.ru/profile/id385275)
+* Наставник: [Виктор Кульбакин](https://htmlacademy.ru/profile/id385275).
 
 ---
 
