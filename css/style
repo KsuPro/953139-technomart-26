@@ -275,6 +275,16 @@ a {
   list-style: none;
 }
 
+.footer-button a {
+	background-color: #212a3a;
+}
+
+.footer-button a:hover,
+.footer-button a:focus,
+.footer-button a:active {
+	background-color: #ee3643;
+}
+
 .footer-copyright a {
 	color: #ffd180;
 }
