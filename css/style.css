@@ -102,6 +102,28 @@ a {
 	background-color: #293449;
 }
 
+.search-input {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: 400;
+	text-align: left;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+  border: none;
+}
+
+.search-input:hover 
+.search-input:focus {
+	background-color: #212a3a;
+}
+
+.search-input:active {
+	color: #000000;
+	background-color: #ffffff;
+}
+
 .bookmarks:hover,
 .cart:focus {
 	background-color: #212a3a;
@@ -114,6 +136,10 @@ a {
 }
 
 .cart-active {
+	background-color: #ee3643;
+}
+
+.bookmarks-active {
 	background-color: #ee3643;
 }
 
@@ -181,7 +207,7 @@ a {
 /* Cтили для основной навигации по сайту */
 
 .main-navigation {
-	box-shadow: inset 0px -5px 0 0 #293449;
+	box-shadow: inset -5px 0 0 #293449;
 	background-color: #32425c;
 }
 
