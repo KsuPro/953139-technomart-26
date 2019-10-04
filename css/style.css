@@ -1,45 +1,44 @@
 body {
-  margin:0;
 	padding: 0;
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
-  text-align: left;
+	text-align: left;
 	color: #000000;
-  text-transform: none;
+	text-transform: none;
 
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 a {
 	text-decoration: none;
-  color: #ffffff
+	color: #ffffff
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .button-red {
 	font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
 
-  background-color: #ee3643;
-  border: none;
+	background-color: #ee3643;
+	border: none;
 }
 
 .button-red:hover,
@@ -48,7 +47,7 @@ a {
 }
 
 .button-red:active {
-  background-color: #ba2732;
+	background-color: #ba2732;
 }
 
 .header {
@@ -69,7 +68,7 @@ a {
 .company-partners,
 .footer-navigation-list,
 .footer-navigation-list-yellow {
-  list-style: none;
+	list-style: none;
 }
 
 /* Cтили для логотипа в шапке */
@@ -96,26 +95,26 @@ a {
 /* Cтили для кнопок "Закладки" и "Корзина" в шапке */
 .bookmarks,
 .cart {
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
 
-  background-color: #293449;
+	background-color: #293449;
 }
 
 .bookmarks:hover,
 .cart:focus {
-  background-color: #212a3a;
+	background-color: #212a3a;
 }
 
 .bookmarks:active,
 .cart:active {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #161d29;
+	color: rgba(255, 255, 255, 0.6);
+	background-color: #161d29;
 }
 
 .cart-active {
-  background-color: #ee3643;
+	background-color: #ee3643;
 }
 
 /* Cтили для кнопки "Оформить заказ" в шапке */
@@ -131,41 +130,41 @@ a {
 
 .order:active {
 	color: rgba(255, 255, 255, 0.5);
-  background-color: #518534;
+	background-color: #518534;
 }
 
 /* Cтили для контактов компании в шапке */
 
 .page-title {
-  font-size: 16px;
-  font-style: italic;
-  font-weight: normal;
-  line-height: 23px;
-  color: #ee3643;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 23px;
+	color: #ee3643;
 }
 
 .header-contacts-tel {
 	font-size: 21px;
 	line-height: 21px;
-  color: #e9292a;
-  
-  border: 3px solid #ffffff;
+	color: #e9292a;
+	
+	border: 3px solid #ffffff;
 }
 
 .header-contacts p {
 	font-size: 14px;
-  color: #32425c;
+	color: #32425c;
 }
 
 /* Cтили для личного кабинета */
 
 .user-navigation-login,
 .user-navigation-checkin {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-  
-  background-color: #ffffff;
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	
+	background-color: #ffffff;
 }
 
 
@@ -183,38 +182,36 @@ a {
 
 .main-navigation {
 	box-shadow: inset 0px -5px 0 0 #293449;
-  background-color: #32425c;
+	background-color: #32425c;
 }
 
 .main-navigation-list {
 	font-size: 17px;
-  line-height: 17px;
-  color: #ffffff;
+	line-height: 17px;
+	color: #ffffff;
 }
 
 .main-navigation-list a:hover,
 .main-navigation-list a:focus {
-  background-color: #293449;
+	background-color: #293449;
 }
 
 .main-navigation-list a:active {
-  background-color: #293449;
-  color: rgb(255, 255, 255, 0.5);
+	background-color: #293449;
+	color: rgb(255, 255, 255, 0.5);
 }
 
 
 /* Cтили раздела о компании */
 
-.company h2,
-.contacts h2 {
+.section-title {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 }
 
-.company p,
-.contacts p {
-	font-family: PTSans;
+.section-text {
+	font-family: "PT Sans", Arial, sans-serif;
 }
 
 .company-partners {
@@ -227,9 +224,12 @@ a {
 }
 
 .modal-message {
-  display: none;
+	display: none;
 }
 
+.modal-cart {
+	display: none;
+}
 
 /* Cтили для футера */
 
@@ -243,16 +243,16 @@ a {
 /* Cтили для логотипа в футере */
 
 .footer-logo-link {
-  background-color: #ee3643;
+	background-color: #ee3643;
 }
 
 .footer-logo-link:hover,
 .footer-logo-link:focus {
-  background-color: #ca2c37;
+	background-color: #ca2c37;
 }
 
 .footer-logo-link:activ {
-  background-color: #ba2732;
+	background-color: #ba2732;
 } 
 
 /* Cтили для навигации в футере */
@@ -292,7 +292,7 @@ a {
 }
 
 .footer-social ul {
-  list-style: none;
+	list-style: none;
 }
 
 .social-button {
@@ -322,42 +322,42 @@ a {
 /* Cтили меню каталоге */
 
 .user-navigation-active span {
-  font-size: 21px;
-  line-height: 21px;
+	font-size: 21px;
+	line-height: 21px;
 }
 
 .user-navigation-link {
-  font-size: 16;
-  line-height: 18;
-  color: #32425c;
-  text-decoration: underline;
+	font-size: 16;
+	line-height: 18;
+	color: #32425c;
+	text-decoration: underline;
 }
 
 .user-navigation-link:hover,
 .user-navigation-link:focus {
-  color: #ee3643;
+	color: #ee3643;
 }
 
 .user-navigation-link:active {
-  color: rgba(50, 66, 92, 0.3);
+	color: rgba(50, 66, 92, 0.3);
 }
 
 
 /* Cтили "хлебных крошек" в каталоге */
 
 .breadcrumbs {
-  list-style: none;
+	list-style: none;
 }
 
 .breadcrumbs a {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
-  line-height: 18px;
-  font-weight: normal;
-  text-decoration: none;
-  text-transform: uppercase;
+	line-height: 18px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
 
-  color: #000000;
+	color: #000000;
 }
 
 .catalog-title {
@@ -370,112 +370,108 @@ a {
 }
 
 .filter {
-  font-family: "PT Sans", Arial, sans-serif;
-  text-transform: uppercase;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-transform: uppercase;
 }
 
 .filter fieldset {
-  border: none;
+	border: none;
 }
 
 .filter legend {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 30px;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 30px;
 }
 
 .filter ul {
-  list-style: none;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #000000;
+	list-style: none;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 .filter-input:disabled + label {
-  color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.4);
 }
 
 .filter-button {
-  border: solid 1px #e5e5e5;
-  background-color: #ffffff;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+  color: #000000;
+	border: solid 1px #e5e5e5;
+	background-color: #ffffff;
 }
 
 .catalog-list {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: bold;
-  list-style: none;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: bold;
+	list-style: none;
 }
 
 .catalog-item {
-  border: solid 1px #e5e5e5;
-  background-color: #ffffff;
+	border: solid 1px #e5e5e5;
+	background-color: #ffffff;
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 
 .catalog-category {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.catalog-category-type {
-  text-transform: uppercase;
+	font-size: 18px;
+	line-height: 20px;
 }
 
 .catalog-item-price {
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
 }
 
 .catalog-item-price-old {
-  color: #999999;
+	color: #999999;
 }
 
 .catalog-button-buy {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
 
-  box-shadow: inset 0px -3px 0 0 #367315;
-  background-color: #63a63e;
+	box-shadow: inset 0px -3px 0 0 #367315;
+	background-color: #63a63e;
 }
 
 .catalog-button-buy:hover
 .catalog-button-buy:focus {
-  background-color: #5fbb2d;
+	background-color: #5fbb2d;
 }
 
 .catalog-button-buy:active {
-  background-color: #518534;
+	background-color: #518534;
 }
 
 .catalog-button-bookmarks {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  color: #32425c;
-  border: solid 3px #63a63e;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	color: #32425c;
+	border: solid 3px #63a63e;
 }
 
 .catalog-button-bookmarks:hover
 .catalog-button-bookmarks:focus {
-  color: #32425c;
-  border: solid 3px #32425c;
+	color: #32425c;
+	border: solid 3px #32425c;
 }
 
 .catalog-button-bookmarks:active {
-  color: rgba(50, 66, 92, 0.3);
-  opacity: 0.3;
-  border: solid 3px #32425c;
+	color: rgba(50, 66, 92, 0.3);
+	opacity: 0.3;
+	border: solid 3px #32425c;
 }
