@@ -13,20 +13,19 @@
 	<header class="header">
 		<!--Верхнее меню с логотипом-->
 		<div class="header-menu">
-			<a class="header-logo-link" href="index.html">
-				<img class="header-logo-img" src="img/logo-technomart.svg" width="109" height="19" alt="Логотип магазина «Техномарт»">
-			</a>
-			
-			<form class="search" action="https://echo.htmlacademy.ru" method="get">
-				<button class="search-button" type="submit">Поиск</button>
-				<input class="search-input" type="search" name="search" placeholder="Поиск">
-			</form>
-						
-			<a class="bookmarks" href="#">Закладки: 0</a>
-			<a class="cart cart-active" href="#">Корзина: 10</a>
-			<a class="order" href="#">Оформить заказ</a>
+			<div class="container header-menu-wrapper">
+				<a class="header-logo-link" href="index.html">
+					<img class="header-logo-img" src="img/logo-technomart.svg" width="109" height="19" alt="Логотип магазина «Техномарт»">
+				</a>
+				<form class="search" action="https://echo.htmlacademy.ru" method="get">
+					<button class="search-button" type="submit">Поиск</button>
+					<input class="search-input" type="search" name="search" placeholder="Поиск">
+				</form>
+				<a class="bookmarks" href="#">Закладки: 0</a>
+				<a class="cart cart-active" href="#">Корзина: 10</a>
+				<a class="order" href="#">Оформить заказ</a>
+			</div>
 		</div>
-
 		<div>
 			<h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<div class="header-contacts">
@@ -35,8 +34,7 @@
 				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
 		</div>
-
-<!--Личный кабинет-->
+		<!--Личный кабинет-->
 		<section class="user-navigation">
 			<h2 class="visually-hidden">Личный кабинет </h2>
 			<div class="user-navigation-active">
@@ -46,7 +44,6 @@
 			<a class="user-navigation-link" href="#">Мои заказы</a>
 			<a class="user-navigation-link" href="#">Личный кабинет</a>
 		</section>
-
 		<!--Основная навигация по странице-->
 		<nav class="main-navigation">
 			<ul class="main-navigation-list">
@@ -60,7 +57,6 @@
 			</ul>
 		</nav>
 	</header>
-
 	<main class="container">
 		<ul class="breadcrumbs">
 			<li><a hhref="index.html">Главная</a></li>
@@ -68,9 +64,7 @@
 			<li><a href="#">Инструмент</a></li>
 			<li><a href="#">Перфораторы</a></li>
 		</ul>
-		 
 		<h1 class="catalog-title">Перфораторы</h1>
-
 		<!-- Фильтр товаров -->
 		<section class="filters">
 			<h2>Фильтр:</h2>
@@ -79,7 +73,6 @@
 					<legend>Цена:</legend>
 					<!-- Фильтр товаров по цене -->
 				</fieldset>
-
 				<fieldset>
 					<legend>Производители:</legend>
 					<ul>
@@ -115,7 +108,7 @@
 						<li class="filter-option">
 							<input class="filter-input" type="radio" name="power" value="network" id="filter-network">
 							<label for="filter-network">Сетевые</label>
-						</li>       
+						</li>
 					</ul>
 				</fieldset>
 				<button class="filter-button" type="submit">Показать</button>
@@ -137,7 +130,6 @@
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
 					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -148,9 +140,8 @@
 					<div>
 						<a class="catalog-button-buy" href="#">Купить</a>
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
-					</div>  
+					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -160,9 +151,8 @@
 					<div>
 						<a class="catalog-button-buy" href="#">Купить</a>
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
-					</div>  
+					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -175,7 +165,6 @@
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
 					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -186,9 +175,8 @@
 					<div>
 						<a class="catalog-button-buy" href="#">Купить</a>
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
-					</div>  
+					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -198,9 +186,8 @@
 					<div>
 						<a class="catalog-button-buy" href="#">Купить</a>
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
-					</div>  
+					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -213,7 +200,6 @@
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
 					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -226,7 +212,6 @@
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
 					</div>
 				</li>
-
 				<li class="catalog-item">
 					<a href="catalog-item.html">
 						<img class="catalog-item-image" src="img/perforator-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -236,7 +221,7 @@
 					<div>
 						<a class="catalog-button-buy" href="#">Купить</a>
 						<a class="catalog-button-bookmarks" href="#">В закладки</a>
-					</div>  
+					</div>
 				</li>
 			</ul>
 		</section>
@@ -246,7 +231,7 @@
 			<p>Товар добавлен в корзину!"</p>
 			<button type="button" aria-label="Закрыть">x</button>
 			<a href="#">Оформить заказ</a>
-			<button type="button">Продолжить покупки</button>     
+			<button type="button">Продолжить покупки</button>
 		</section>
 	</main>
 	<!-- Подвал -->
@@ -254,7 +239,7 @@
 		<div class="footer-menu">
 			<a class="footer-logo-link" href="index.html">
 				<img class="footer-logo-img" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
-			</a>    
+			</a>
 			<p class="footer-contacts">
 				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				<a href="tel:+78125550555">+7(812) 555-05-55</a>
@@ -275,7 +260,6 @@
 				</ul>
 			</nav>
 		</div>
-
 		<div class="footer-info">
 			<p>
 				© 2010-2017 Компания "Техномарт"<br>

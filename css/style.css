@@ -1,65 +1,65 @@
 body {
-	padding: 0;
+  padding: 0;
 
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	font-weight: 400;
-	text-align: left;
-	color: #000000;
-	text-transform: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
 
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 a {
-	text-decoration: none;
-	color: #ffffff
+  text-decoration: none;
+  color: #ffffff
 }
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button-red {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	color: #ffffff;
-	vertical-align: middle;
-	text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
 
-	background-color: #ee3643;
-	border: none;
+  background-color: #ee3643;
+  border: none;
 }
 
 .button-red:hover,
 .button-red:focus {
-	background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 
 .button-red:active {
-	background-color: #ba2732;
+  background-color: #ba2732;
 }
 
 .header {
-	background-color: #f4f7f9;
+  background-color: #f4f7f9;
 }
 
 .header-menu {
-	font-size: 17px;
-	line-height: 18px;
-	color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
 
-	background-color: #293449;
+  background-color: #293449;
 }
 
 .header-menu,
@@ -68,430 +68,567 @@ a {
 .company-partners,
 .footer-navigation-list,
 .footer-navigation-list-yellow {
-	list-style: none;
+  list-style: none;
 }
 
 /* Cтили для логотипа в шапке */
 
 .header-logo-link {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 .header-logo-link:hover,
 .header-logo-link:focus {
-	background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 
 .header-logo-link:activ {
-	background-color: #ba2732;
+  background-color: #ba2732;
 }
 
 /* Cтили для поиска в шапке */
 
 .search-input {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-weight: 400;
-	text-align: left;
-	font-size: 17px;
-	line-height: 18px;
-	color: #ffffff;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
 
-	background-color: #293449;
-	border: none;
+  background-color: #293449;
+  border: none;
 }
 
 .search-input:hover .search-input:focus {
-	background-color: #212a3a;
+  background-color: #212a3a;
 }
 
 .search-input:active {
-	color: #000000;
-	background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 /* Cтили для кнопок "Закладки" и "Корзина" в шапке */
 
 .bookmarks,
 .cart {
-	font-size: 17px;
-	line-height: 18px;
-	color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
 
-	background-color: #293449;
+  background-color: #293449;
 }
 
 .bookmarks:hover,
 .cart:focus {
-	background-color: #212a3a;
+  background-color: #212a3a;
 }
 
 .bookmarks:active,
 .cart:active {
-	color: rgba(255, 255, 255, 0.6);
-	background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
 }
 
 .cart-active {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 .bookmarks-active {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 /* Cтили для кнопки "Оформить заказ" в шапке */
 
 .order {
-	background-color: #63a63e;
+  background-color: #63a63e;
 }
 
 .order:hover,
 .order:focus {
-	background-color: #5fbb2d;
+  background-color: #5fbb2d;
 }
 
 .order:active {
-	color: rgba(255, 255, 255, 0.5);
-	background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
 }
 
 /* Cтили для контактов компании в шапке */
 
 .page-title {
-	font-size: 16px;
-	font-style: italic;
-	font-weight: normal;
-	line-height: 23px;
-	color: #ee3643;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .header-contacts-tel {
-	font-size: 21px;
-	line-height: 21px;
-	color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
 
-	border: 3px solid #ffffff;
+  border: 3px solid #ffffff;
 }
 
 .header-contacts p {
-	font-size: 14px;
-	color: #32425c;
+  font-size: 14px;
+  color: #32425c;
 }
 
 /* Cтили для личного кабинета */
 
 .user-navigation-login,
 .user-navigation-checkin {
-	font-size: 21px;
-	line-height: 21px;
-	color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
 
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 
 .user-navigation-login:hover,
 .user-navigation-checkin:focus {
-	color: #ee3643;
+  color: #ee3643;
 }
 
 .user-navigation-login:active,
 .user-navigation-checkin:active {
-	color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Cтили для основной навигации по сайту */
 
 .main-navigation {
-	box-shadow: inset -5px 0 0 #293449;
-	background-color: #32425c;
+  box-shadow: inset -5px 0 0 #293449;
+  background-color: #32425c;
 }
 
 .main-navigation-list {
-	font-size: 17px;
-	line-height: 17px;
-	color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
 }
 
 .main-navigation-list a:hover,
 .main-navigation-list a:focus {
-	background-color: #293449;
+  background-color: #293449;
 }
 
 .main-navigation-list a:active {
-	background-color: #293449;
-	color: rgb(255, 255, 255, 0.5);
+  background-color: #293449;
+  color: rgb(255, 255, 255, 0.5);
 }
 
 
 /* Cтили раздела о компании */
 
 .section-title {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .section-text {
-	font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .company-partners {
-	font-size: 18px;
-	line-height: 20px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .modal-map {
-	display: none;
+  display: none;
 }
 
 .modal-message {
-	display: none;
+  display: none;
 }
 
 .modal-cart {
-	display: none;
+  display: none;
 }
 
 /* Cтили для футера */
 
 .footer-menu {
-	font-size: 18px;
-	line-height: 24px;
-	color: #f3f7f9;
-	background-color: #32425c;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  background-color: #32425c;
 }
 
 /* Cтили для логотипа в футере */
 
 .footer-logo-link {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 .footer-logo-link:hover,
 .footer-logo-link:focus {
-	background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 
 .footer-logo-link:activ {
-	background-color: #ba2732;
+  background-color: #ba2732;
 }
 
 /* Cтили для навигации в футере */
 
 .footer-navigation-list a {
-	text-decoration: none;
-	color: #f1f5f7;
+  text-decoration: none;
+  color: #f1f5f7;
 }
 
 .footer-navigation-list-yellow a {
-	color: #ffd180;
+  color: #ffd180;
 }
 
 .footer-navigation-list a:hover,
 .footer-navigation-list a:focus,
 .footer-navigation-list-yellow a:hover,
 .footer-navigation-list-yellow a:focus {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-navigation-list a:active {
-	color: rgba(241, 245, 247, 0.5);
-	text-decoration: none;
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
 }
 
 .footer-navigation-list-yellow a:active {
-	color: rgba(255, 209, 128, 0.5);
-	text-decoration: none;
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
 }
 
 .footer-info {
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
 
-	background-color: #293449;
+  background-color: #293449;
 }
 
 .footer-social ul {
-	list-style: none;
+  list-style: none;
 }
 
 .social-button {
-	background-color: #212a3a;
+  background-color: #212a3a;
 }
 
 .social-button:hover,
 .social-button:focus,
 .social-button:active {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 .footer-copyright-link {
-	color: #ffd180;
+  color: #ffd180;
 }
 
 .footer-copyright-link:hover,
 .footer-copyright-link:focus {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-copyright-link:active {
-	color: #ee3643;
+  color: #ee3643;
 }
 
 
 /* Cтили меню каталоге */
 
 .user-navigation-active span {
-	font-size: 21px;
-	line-height: 21px;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .user-navigation-link {
-	font-size: 16;
-	line-height: 18;
-	color: #32425c;
-	text-decoration: underline;
+  font-size: 16;
+  line-height: 18;
+  color: #32425c;
+  text-decoration: underline;
 }
 
 .user-navigation-link:hover,
 .user-navigation-link:focus {
-	color: #ee3643;
+  color: #ee3643;
 }
 
 .user-navigation-link:active {
-	color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 
 /* Cтили "хлебных крошек" в каталоге */
 
 .breadcrumbs {
-	list-style: none;
+  list-style: none;
 }
 
 .breadcrumbs a {
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	font-weight: normal;
-	text-decoration: none;
-	text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
 
-	color: #000000;
+  color: #000000;
 }
 
 .catalog-title {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-	color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
 
-	background-color: #f2f6f8;
+  background-color: #f2f6f8;
 }
 
 .filter {
-	font-family: "PT Sans", Arial, sans-serif;
-	text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .filter fieldset {
-	border: none;
+  border: none;
 }
 
 .filter legend {
-	font-size: 17px;
-	font-weight: bold;
-	line-height: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .filter ul {
-	list-style: none;
-	font-size: 15px;
-	line-height: 20px;
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .filter-input:disabled+label {
-	color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .filter-button {
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	text-align: center;
-	color: #000000;
-	border: solid 1px #e5e5e5;
-	background-color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
 }
 
 .catalog-list {
-	font-family: "PT Sans", Arial, sans-serif;
-	font-weight: bold;
-	list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  list-style: none;
 }
 
 .catalog-item {
-	border: solid 1px #e5e5e5;
-	background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
 }
 
 .catalog-item:hover {
-	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 
 .catalog-category {
-	font-size: 18px;
-	line-height: 20px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .catalog-item-price {
-	font-size: 17px;
-	line-height: 18px;
-	color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
 }
 
 .catalog-item-price-old {
-	color: #999999;
+  color: #999999;
 }
 
 .catalog-button-buy {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
 
-	box-shadow: inset 0px -3px 0 0 #367315;
-	background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
 }
 
-.catalog-button-buy:hover .catalog-button-buy:focus {
-	background-color: #5fbb2d;
+.catalog-button-buy:hover,
+.catalog-button-buy:focus {
+  background-color: #5fbb2d;
 }
 
 .catalog-button-buy:active {
-	background-color: #518534;
+  background-color: #518534;
 }
 
 .catalog-button-bookmarks {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 14px;
-	line-height: 18px;
-	color: #32425c;
-	border: solid 3px #63a63e;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  border: solid 3px #63a63e;
 }
 
-.catalog-button-bookmarks:hover .catalog-button-bookm arks:focus {
-	color: #32425c;
-	border: solid 3px #32425c;
+.catalog-button-bookmarks:hover,
+.catalog-button-bookmarks:focus {
+  color: #32425c;
+  border: solid 3px #32425c;
 }
 
 .catalog-button-bookmarks:active {
-	color: rgba(50, 66, 92, 0.3);
-	opacity: 0.3;
-	border: solid 3px #32425c;
+  color: rgba(50, 66, 92, 0.3);
+  opacity: 0.3;
+  border: solid 3px #32425c;
+}
+
+
+/* Сеточные стили */
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  margin-bottom: 59px;
+
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.header-menu {
+  /* Временно для сетки */
+  min-height: 42;
+}
+
+.header-menu-wrapper {
+  display: flex;
+}
+
+.header-logo-link {
+  width: 220px;
+  height: 47px;
+}
+
+.search {
+  width: 270px;
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.bookmarks,
+.cart,
+.order {
+  width: 150px;
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+
+
+  /* Временно для сетки */
+  min-height: 45px;
+
+}
+
+.main-navigation {
+  margin: 0;
+  padding: 0;
+
+
+  /* Временно для сетки */
+  min-height: 60px;
+}
+
+.main-navigation-list {
+  display: flex;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+
+  /* Временно для сетки */
+  background-color: transparent;
+}
+
+
+.company {
+  width: 519px;
+  /* Временно для сетки */
+  min-height: 536px;
+}
+
+.contacts {
+  width: 300px;
+  /* Временно для сетки */
+  min-height: 536px;
+}
+
+.footer {
+  margin-top: 86px;
+  /* Временно для сетки */
+  min-height: 300px;
+}
+
+.footer-info {
+  /* Временно для сетки */
+  min-height: 107px;
+}
+
+.footer-info-text {
+  width: 228px;
+  margin: 0;
+
+  /* Временно для сетки */
+  min-height: 33px;
+}
+
+.footer-social {
+  width: 132px;
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.footer-copyright-wrapper {
+  width: 284px;
+  margin: 0;
+
+  /* Временно для сетки */
+  min-height: 32px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+
 }
