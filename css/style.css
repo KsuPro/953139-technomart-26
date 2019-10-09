@@ -67,6 +67,7 @@ img {
 }
 
 .header {
+  height: 320px;
   margin-bottom: 59px;
   background-color: #f4f7f9;
 }
@@ -86,7 +87,11 @@ img {
 .main-navigation-list,
 .company-partners,
 .footer-navigation-list,
-.footer-navigation-list-yellow {
+.footer-navigation-list-yellow,
+.offers-list,
+.slider-item,
+.popular-manufacturer-item,
+.services-list-item  {
   list-style: none;
 }
 
