@@ -1,3 +1,14 @@
+  
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   min-width: 1200px;
@@ -457,6 +468,24 @@ img {
 
 /* Cтили раздела о компании */
 
+.about-company {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 82px;
+  padding-bottom: 86px;
+}
+
+
+.company {
+  width: 519px;
+ }
+
+.contacts {
+  width: 300px;
+
+}
+
+
 .section-title {
   margin: 0;
   margin-bottom: 38px;
@@ -468,12 +497,32 @@ img {
 .section-text {
   font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
-  margin-bottom: 36px;
+  padding-bottom: 36px;
+
 }
 
 .company-partners {
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.contacts-link-img {
+  width: 300px;
+  height: 158px;
+  margin-bottom: 40px;
+}
+
+.company .button-red {
+  width: 220px;
+}
+
+.contacts .button-red {
+  box-sizing: border-box;
+margin: 0;
+  width: 300px;
 }
 
 .modal-map {
@@ -491,7 +540,6 @@ img {
 /* Cтили для футера */
 
 .footer {
-  margin-top: 86px;
 }
 
 .footer-menu {
@@ -551,14 +599,19 @@ img {
 .footer-navigation {
   display: flex;
   flex-direction: column;
-  width: 547px;
+  justify-content: flex-start;
+  width: 482px;
 
 }
 
 .footer-navigation-list {
   display: flex;
   justify-content: flex-end;
+  padding: 0;
+  margin: 0;
   padding-top: 42px;
+  margin-bottom: 35px;
+
 
 
 }
@@ -567,12 +620,14 @@ img {
   text-decoration: none;
   color: #f1f5f7;
   padding-left: 60px;
+
 }
 
 .footer-navigation-list-yellow {
   display: flex;
   justify-content: flex-end;
-
+padding: 0;
+  margin: 0;
 
 }
 
@@ -831,21 +886,3 @@ img {
   border: solid 3px #32425c;
 }
 
-
-.index-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.company {
-  width: 519px;
-  /* Временно для сетки */
-  min-height: 536px;
-}
-
-.contacts {
-  width: 300px;
-  /* Временно для сетки */
-  min-height: 536px;
-}
