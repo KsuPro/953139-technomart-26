@@ -1011,6 +1011,7 @@
 
   .catalog-item-buy:hover,
   .catalog-item-buy:focus {
+    opacity: 1
     background-color: #5fbb2d;
   }
 
@@ -1020,22 +1021,33 @@
 
 
   .catalog-item-buy::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    background-image: url("img/icon-cart.svg");
+
+    background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 0; 
     opacity: 0.3;
 
-    pointer-events: none;
-    transition-property: fill, opacity;
+    transition-property: opacity;
     transition-duration: .2s;
     transition-timing-function: linear;
   }
+
+ 
+.catalog-item-buy:hover::before,
+.catalog-item-buy:focus::before,
+.catalog-item-buy:active::before {
+ 
+    opacity: 1;
+  }
+
+
 
   .catalog-item-bookmarks {
     color: #32425c;
