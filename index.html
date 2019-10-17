@@ -83,7 +83,7 @@
     <div class="container">
       <section class="offers">
         <h2 class="visually-hidden">Товары и предложения</h2>
-        <ul class="offers-list">
+        <ul class="offers-list-top">
           <li class="offers-list-item materials">
             <div class="flag flag-new">новинка</div>
             <p>Материалы</p>
@@ -99,43 +99,43 @@
           </li>
         </ul>
         <!--Слайдер-->
-        <div class="slider">
-          <input class="visually-hidden" type="radio" id="previous" name="arrow-previous-toggle">
-          <input class="visually-hidden" type="radio" id="next" name="arrow-next-toggle">
-          <div class="slider-controls">
-            <label for="previous">Назад</label>
-            <label for="next">Вперед</label>
+        <div class="offers-bottom">
+          <div class="slider">
+            <input class="visually-hidden" type="radio" id="previous" name="arrow-previous-toggle">
+            <input class="visually-hidden" type="radio" id="next" name="arrow-next-toggle">
+            <div class="slider-controls">
+              <label for="previous">Назад</label>
+              <label for="next">Вперед</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item slide" id="slide-1">
+                <h3 class="slider-title">Дрели</h3>
+                <p class="slider-text">Соседям на радость!</p>
+                <a class="button-red slider-link" href="catalog.html">Открыть каталог</a>
+                <img class="slider-image" src="img/slider1.jpg" width="620" height="266" alt="Изображение дрели">
+              </li>
+              <li class="slider-item slide" id="slide-2">
+                <h3 class="slider-title">Перфораторы</h3>
+                <p class="slider-text">Настоящие мужские игрушки</p>
+                <a class="button-red slider-link" href="catalog.html">Открыть каталог</a>
+               
+                  <img class="slider-image" src="img/slider2.jpg" width="620" height="266" alt="Изображение перфоратора">
+               
+              </li>
+            </ul>
           </div>
-          <ul class="slider-list">
-            <li class="slider-item slide" id="slide-1">
-              <h3 class="slider-title">Дрели</h3>
-              <p class="slider-text">Соседям на радость!</p>
-              <a class="slider-link" href="catalog.html">Открыть каталог</a>
-              <div class="slider-image">
-                <img src="img/slider1.jpg" width="620" height="266" alt="Изображение дрели">
-              </div>
+          <!--Конец слайдера-->
+          <ul class="offers-list-bottom">
+            <li class="offers-list-item sales">
+              <p>Скидка 50%</p>
+              <a class="offers-button" href="#">на 350 товаров</a>
             </li>
-            <li class="slider-item slide" id="slide-2">
-              <h3 class="slider-title">Перфораторы</h3>
-              <p class="slider-text">Настоящие мужские игрушки</p>
-              <a class="slider-link" href="catalog.html">Открыть каталог</a>
-              <div class="slider-image">
-                <img src="img/slider2.jpg" width="620" height="266" alt="Изображение перфоратора">
-              </div>
+            <li class="offers-list-item delivery">
+              <p>Доставка</p>
+              <a class="offers-button" href="#">бесплатно</a>
             </li>
           </ul>
         </div>
-        <!--Конец слайдера-->
-        <ul class="offers-list">
-          <li class="offers-list-item sales">
-            <p>Скидка 50%</p>
-            <a class="offers-button" href="#">на 350 товаров</a>
-          </li>
-          <li class="offers-list-item delivery">
-            <p>Доставка</p>
-            <a class="offers-button" href="#">бесплатно</a>
-          </li>
-        </ul>
       </section>
     </div>
     <!--Популярные товары-->
@@ -146,7 +146,7 @@
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <a href="catalog-item.html">
+          <a href="#">
             <img class="catalog-item-image" src="img/perforator-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
           </a>
           <div class="flag">новинка</div>
@@ -159,7 +159,7 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a href="catalog-item.html">
+          <a href="#">
             <img class="catalog-item-image" src="img/perforator-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </a>
           <div class="flag">новинка</div>
@@ -172,7 +172,7 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a href="catalog-item.html">
+          <a href="#">
             <img class="catalog-item-image" src="img/perforator-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </a>
           <div class="flag">новинка</div>
@@ -185,7 +185,7 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a href="catalog-item.html">
+          <a href="#">
             <img class="catalog-item-image" src="img/perforator-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           </a>
           <div class="flag flag-new">новинка</div>
@@ -267,14 +267,14 @@
         <h2 class="section-title">Компания "Техномарт"</h2>
         <p class="section-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p class="section-text">Мы можем доставить ваш товар в самые отдаленные точки России!
-       <br> Техномарт работает со многими транспортными компаниями:</p>
+          <br> Техномарт работает со многими транспортными компаниями:</p>
         <ul class="company-partners">
           <li class="company-partners-item">Деловые линии</li>
           <li class="company-partners-item">Автотрейдинг</li>
           <li class="company-partners-item">ЖелДорЭкспедиция</li>
         </ul>
         <a class="button-red" href="#">Подробнее о компании</a>
-        </div>
+      </div>
       <div class="contacts">
         <h2 class="section-title">Контакты</h2>
         <p class="section-text">Вы можете забрать товар сами, заехав в наш офис:</p>
