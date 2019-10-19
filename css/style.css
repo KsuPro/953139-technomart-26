@@ -715,6 +715,7 @@ width: 4px;
     padding-top: 26px;
     padding-bottom: 22px;
     padding-left: 22px;
+    padding-right: 120px;
 
     color: #fff;
   }
@@ -837,6 +838,7 @@ width: 4px;
 
     border-radius: 50%;
     background-color: #fff;
+    cursor: pointer;
   }
 
 
@@ -879,11 +881,12 @@ width: 4px;
 
     transition-timing-function: linear;
     transition-duration: .2s;
-    transition-property: fill;
+    transition-property: color;
 
     color: #fff;
     border: none;
     background: transparent;
+    cursor: pointer;
   }
 
   .slider-arrow:hover,
@@ -912,7 +915,6 @@ width: 4px;
   .slider-item {
     position: relative;
 
-    display: flex;
     display: none;
     flex-direction: column;
 
@@ -1054,7 +1056,7 @@ width: 4px;
     display: flex;
     justify-content: space-between;
 
-    padding-top: 82px;
+    padding-top: 52px;
     padding-bottom: 86px;
   }
 
@@ -1848,7 +1850,6 @@ width: 4px;
 
   .services {
     padding-top: 68px;
-    padding-bottom: 139px;
 
     background-color: #f4f7f9;
   }
@@ -1876,7 +1877,6 @@ width: 4px;
 
   .services-controls::after {
     position: absolute;
-    z-index: 10;
     top: 50%;
     right: 0;
 
@@ -1918,6 +1918,8 @@ width: 4px;
     box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #fff;
   }
 
+
+
   .services-list {
     margin: 0;
     padding-top: 43px;
@@ -1926,7 +1928,6 @@ width: 4px;
   .services-list-item {
     position: relative;
 
-    display: flex;
     display: none;
     flex-direction: column;
 
@@ -1936,7 +1937,7 @@ width: 4px;
     padding: 0;
   }
 
-  .services-list-item .active {
+  .services-list-item.active {
     display: flex;
   }
 
