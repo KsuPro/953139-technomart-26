@@ -501,6 +501,90 @@
   }
 
 
+.catalog-user-navigation {
+  display: flex;
+  flex-direction: column;
+  min-width: 299px;
+
+}
+
+.user-navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.user-navigation-profile {
+   display: flex;
+  align-items: center;
+ font-size: 21px;
+    line-height: 21px;
+ min-height: 45px;
+ padding: 0 14px;
+
+
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: background-color, color;
+
+    color: #000;
+    background-color: #fff;
+}
+
+.catalog-user-icon {
+  width: 20px;
+    height: 18px;
+    margin-right: 14px;
+}
+
+.user-navigation-profile svg {
+  transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: fill;
+
+    fill: #c5c5c5;
+}
+
+.user-navigation-profile:hover svg,
+.user-navigation-profile:focus svg {
+    fill: #32425c;
+}
+
+.user-navigation-profile:active svg {
+      fill: #c5c5c5;
+    }
+
+.user-navigation-exit {
+display: flex;
+  align-items: center;
+}
+
+.catalog-exit-icon {
+  width: 20px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.user-navigation-exit svg {
+  transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: fill;
+
+    fill: #c5c5c5;
+}
+
+.user-navigation-exit:hover svg,
+.user-navigation-exit:focus svg {
+    fill: #32425c;
+}
+
+.user-navigation-exit:active svg {
+      fill: #c5c5c5;
+    }
+
+
+
   /* Cтили для основной навигации по сайту */
 
   .main-navigation {
