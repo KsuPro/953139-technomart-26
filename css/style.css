@@ -96,10 +96,10 @@
 
   .header {
     height: 320px;
-    margin-bottom: 59px;
 
     background-color: #f4f7f9;
   }
+
 
   .header-menu {
     font-size: 17px;
@@ -502,9 +502,13 @@
 
 
 .catalog-user-navigation {
-  display: flex;
-  flex-direction: column;
-  min-width: 299px;
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    width: 300px;
+    height: 70px;
 
 }
 
@@ -532,6 +536,15 @@
     background-color: #fff;
 }
 
+.user-navigation-profile:hover,
+.user-navigation-profile:focus {
+  color: #ee3643;
+}
+
+.user-navigation-profile:active {
+color: rgba(0, 0, 0, 0.3);
+    }
+
 .catalog-user-icon {
   width: 20px;
     height: 18px;
@@ -558,12 +571,12 @@
 .user-navigation-exit {
 display: flex;
   align-items: center;
+  padding: 14px 10px;
 }
 
 .catalog-exit-icon {
   width: 20px;
   height: 17px;
-  margin-right: 10px;
 }
 
 .user-navigation-exit svg {
@@ -583,6 +596,42 @@ display: flex;
       fill: #c5c5c5;
     }
 
+.navigation-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  font-size: 16px;
+  line-height: 14px;
+    color: #32425c;
+}
+
+.user-navigation-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14px;
+  margin: 10px 15px;
+}
+
+.user-navigation-link::after {
+position: absolute;
+top: 50%;
+right: -15px;
+width: 4px;
+    height: 5px;
+
+    content: '';
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+ background-color: #32425c;
+}
+
+.user-navigation-link:last-child::after {
+  display: none;
+}
 
 
   /* Cтили для основной навигации по сайту */
@@ -632,6 +681,7 @@ display: flex;
   /*Стили раздела "Предложения"*/
 
   .offers {
+    padding-top: 59px;
     margin-bottom: 10px;
   }
 
@@ -740,7 +790,6 @@ display: flex;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-
 
   .offers-list-bottom {
     display: flex;
@@ -913,22 +962,12 @@ display: flex;
     height: 100%;
   }
 
-
-
-
-
-
-
-
   .slider-link {
     z-index: 1;
 
     width: 195px;
     margin-top: auto;
   }
-
-
-
 
   .sales {
     background-color: #8ed78f;
@@ -1364,11 +1403,45 @@ display: flex;
   /* Cтили "хлебных крошек" в каталоге */
 
   .breadcrumbs {
-    list-style: none;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+ 
   }
 
-  .breadcrumbs a {
-    font-family: 'PT Sans', Arial, sans-serif;
+
+ .breadcrumbs-item {
+    position: relative;
+   
+     padding: 0;
+     margin: 22px 22px;  
+}
+
+  .breadcrumbs-item::after {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    width: 8px;
+    height: 12px;
+
+    content: '';
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+  background-image: url('../img/icon-right-small.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+
+.breadcrumbs .breadcrumbs-item:last-child::after {
+  display: none;
+
+}
+
+.breadcrumbs-item-link {
+   font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     font-weight: normal;
     line-height: 18px;
@@ -1377,9 +1450,16 @@ display: flex;
     text-transform: uppercase;
 
     color: #000;
-  }
+}
 
-  .catalog-title {
+
+  .catalog-title { 
+    display: flex;
+    align-items: center;
+     min-height: 89px;
+     margin: 0;
+   margin-bottom: 20px;
+    padding: 10px 30px;
     font-size: 30px;
     line-height: 30px;
 
@@ -1388,6 +1468,9 @@ display: flex;
     color: #32425c;
     background-color: #f2f6f8;
   }
+
+/* Cтили фильтра в каталоге */
+
 
   .filter {
     font-family: 'PT Sans', Arial, sans-serif;
@@ -1428,6 +1511,10 @@ display: flex;
     background-color: #fff;
   }
 
+
+.catalog-wrapper {
+  direction: flex;
+}
 
   .items-title {
     display: flex;
@@ -1934,3 +2021,15 @@ display: flex;
   .services-link {
     width: 195px;
   }
+
+
+/* Стили инфо о перфораторах */
+
+.catalog-info {
+  background-color: #f4f7f9;
+  padding-top: 67px;
+  padding-bottom: 73px;
+}
+
+
+
