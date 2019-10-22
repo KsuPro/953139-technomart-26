@@ -110,33 +110,46 @@
       <!-- Фильтр товаров -->
       <div class="catalog-page-wrapper">
         <section class="filters">
-          <h2>Фильтр:</h2>
+          <h2 class="filter-title">Фильтр:</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Цена:</legend>
               <!-- Фильтр товаров по цене -->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price" aria-label="от"><input name="min-price" type="text" value="0"></label>
+                  <label class="max-price" aria-label="до"><input name="max-price" type="text" value="30000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                   <label for="filter-bosch">bosch</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="interskol" id="filter-interskol">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
                   <label for="filter-interskol">интерскол</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
                   <label for="filter-makita">makita</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                   <label for="filter-dewalt">dewalt</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                   <label for="filter-hitachi">hitachi</label>
                 </li>
               </ul>
@@ -145,11 +158,11 @@
               <legend>Питание:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input" type="radio" name="power" value="battery" id="filter-battery" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="battery" id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="radio" name="power" value="network" id="filter-network">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="network" id="filter-network">
                   <label for="filter-network">Сетевые</label>
                 </li>
               </ul>
@@ -318,8 +331,8 @@
               </li>
             </ul>
             <ul class="pagination-list">
-              <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
-              <li class="pagination-item"><a class="pagination-link active">2</a></li>
+              <li class="pagination-item"><a class="pagination-link active" href="#">1</a></li>
+              <li class="pagination-item"><a class="pagination-link">2</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">Следующая</a></li>
             </ul>
