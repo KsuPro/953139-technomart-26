@@ -1143,6 +1143,7 @@
 
   .contacts-link {
     margin-bottom: 42px;
+    cursor: pointer;
   }
 
   .contacts-link-img {
@@ -1165,6 +1166,7 @@
   }
 
   .modal-map {
+    display: none;
     position: absolute;
     z-index: 10;
     top: 33px;
@@ -1223,12 +1225,8 @@
     transform: rotate(-45deg);
   }
 
-  .modal-show {
-    display: block;
-  }
-
-
   .modal-message {
+    display: none;
     position: fixed;
     z-index: 10;
     top: 50%;
@@ -1345,8 +1343,8 @@
 
 
   .modal-cart {
+    display: none;
     position: relative;
-    position: fixed;
     z-index: 10;
     top: 50%;
     left: 50%;
@@ -1435,6 +1433,9 @@
     border: solid 1px #32425c;
   }
 
+.modal-show {
+  display: block;
+}
 
   /* Cтили для футера */
 
@@ -1939,20 +1940,11 @@
     background-position: 0 0;
   }
 
-  .filter-input-checkbox:checked+label::after {
-    position: absolute;
-    top: 0;
-    left: -35px;
-
-    width: 27px;
-    height: 23px;
-
-    content: '';
+  .filter-input-checkbox:checked+label::before {
+    
 
     background-image: url('../img/checkbox-on.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+    }
 
 
   .filter-input-radio+label::before {
@@ -2443,7 +2435,7 @@
 
   }
 
-    .pagination-link:hover,
+  .pagination-link:hover,
   .pagination-link:focus {
     border: 1px solid #bdc6ca;
   }

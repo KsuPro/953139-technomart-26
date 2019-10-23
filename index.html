@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -297,7 +298,7 @@
           <h2 class="section-title">Контакты</h2>
           <p class="section-text contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="contacts-link"><img class="contacts-link-img" src="img/mini-map.jpg" width="300" height="158" alt="Карта"></a>
-          <a class="button-red" href="#">Заблудились? Напишите нам!</a>
+          <a class="button-red write-us-link" href="#">Заблудились? Напишите нам!</a>
         </div>
         <!--Модальное окно карты-->
         <div class="modal-map">
@@ -306,7 +307,7 @@
           <button class="modal-close" type="button" aria-label="Закрыть">x</button>
         </div>
         <!--Модальное окно сообщения-->
-        <div class="modal-message modal-show">
+        <div class="modal-message">
           <h2 class="visually-hidden">Окно сообщения</h2>
           <form class="modal-message-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="modal-message-top">
@@ -409,3 +410,29 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+  var mapLink = document.querySelector(".contacts-link");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+  
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
+      }
+    }
+  });
+</script>
