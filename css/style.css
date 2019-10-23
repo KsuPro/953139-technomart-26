@@ -64,6 +64,7 @@
     padding-right: 20px;
     padding-left: 20px;
 
+    cursor: pointer;
     transition-timing-function: linear;
     transition-duration: .2s;
     transition-property: background-color;
@@ -1048,8 +1049,6 @@
   }
 
 
-
-
   /* Cтили раздела о компании */
 
   .about-company {
@@ -1167,7 +1166,7 @@
 
   .modal-map {
     position: absolute;
-    z-index: 9;
+    z-index: 10;
     top: 33px;
     left: 50%;
 
@@ -1230,12 +1229,212 @@
 
 
   .modal-message {
-    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+
+    width: 620px;
+    height: 430px;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
   }
 
-  .modal-cart {
-    display: none;
+  .modal-message::before {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 7px;
+
+    content: '';
+
+    background-color: #ff5257;
   }
+
+
+  .modal-message-form {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 51px;
+  }
+
+  .modal-message-top {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    padding: 0 80px;
+  }
+
+  .modal-message-label {
+    font-size: 18px;
+    line-height: 18px;
+
+    display: block;
+
+    margin-bottom: 13px;
+  }
+
+
+  .modal-message-input,
+  .modal-message-textarea {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+
+    padding: 10px 16px;
+
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: border;
+
+    color: #a9a9a9;
+    border: solid 2px #d7dcde;
+    border-radius: 3px;
+      outline: none;
+
+  }
+
+  .modal-message-input {
+    width: 220px;
+    height: 38px;
+  }
+
+  .modal-message-bottom {
+    padding: 0 80px;
+    padding-bottom: 30px;
+  }
+
+  .modal-message-input:hover,
+  .modal-message-textarea:hover {
+    border: solid 2px #b5b5b5;
+  }
+
+  .modal-message-input:focus,
+  .modal-message-textarea:focus {
+    border: solid 2px #ee3643;
+  }
+
+
+  .modal-message-textarea {
+    width: 460px;
+    min-height: 114px;
+
+    resize: none;
+
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+  }
+
+
+  .massege-button {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 112px;
+    padding: 0 80px;
+
+    background-color: #f4f4f4;
+  }
+
+
+  .modal-cart {
+    position: relative;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+
+    width: 620px;
+    height: 282px;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(41, 52, 73, .75);
+  }
+
+  .modal-cart::before {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 7px;
+
+    content: '';
+
+    background-color: #ff5257;
+  }
+
+  .modal-cart-title {
+    font-size: 30px;
+    line-height: 30px;
+
+    position: relative;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 179px;
+  }
+
+  .modal-cart-title::before {
+    position: absolute;
+    top: 50%;
+    left: -98px;
+
+    width: 66px;
+    height: 66px;
+
+    content: '';
+    transform: translateY(-50%);
+
+    background-image: url('../img/icon-mark.svg');
+  }
+
+  .modal-cart-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    height: 112px;
+    padding: 37px 80px;
+
+    background-color: #f1f1f1;
+  }
+
+
+  .modal-cart-checkout,
+  .modal-cart-continue {
+    width: 220px;
+  }
+
+  .modal-cart-buttons .modal-cart-continue {
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: border, color;
+
+    color: #000;
+    background-color: #fff;
+      outline: none;
+
+  }
+
+  .modal-cart-buttons .modal-cart-continue:hover,
+  .modal-cart-buttons .modal-cart-continue:focus {
+    border: solid 1px #ee3643;
+  }
+
+  .modal-cart-buttons .modal-cart-continue:active {
+    color: rgba(50, 66, 92, .3);
+    border: solid 1px #32425c;
+  }
+
 
   /* Cтили для футера */
 
@@ -1557,11 +1756,16 @@
   }
 
   .filter fieldset {
+    position: relative;
+
+    width: 100%;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 0;
+    padding-bottom: 25px;
 
     border: none;
+    border-bottom: 1px solid #e5e5e5;
   }
 
 
@@ -1593,92 +1797,110 @@
     padding-left: 35px;
   }
 
-  .range-filter {
-    position: relative;
-  }
-
 
   .range-controls {
+    display: flex;
+    align-items: center;
+
     width: 100%;
     height: 80px;
     margin-bottom: 9px;
-    padding: 39px 20px;
+    padding: 0 20px;
 
-    border-radius: 3px;
     border-radius: 3px;
     background: #f7f3ec;
   }
 
-  .range-controls .scale {
+
+  .scale {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
     height: 2px;
 
     background-color: #d7dcde;
   }
 
-  .range-controls .bar {
-    width: 70%;
+  .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 80%;
     height: 2px;
+
+    content: '';
 
     background: #00ca74;
   }
 
   .range-controls .toggle {
     position: absolute;
-    top: 31px;
-    left: 0;
 
     width: 20px;
     height: 20px;
-    padding: 0;
 
+    content: '';
     cursor: pointer;
 
     border: 8px solid #fff;
     border-radius: 50%;
     background-color: #ababab;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 2px 0 #cccdcd;
   }
 
   .range-controls .toggle-min {
-    left: 18px;
+    left: 20px;
   }
 
   .range-controls .toggle-max {
-    left: 140px;
+    right: 40px;
   }
 
   .price-controls {
     font-size: 0;
 
+    position: relative;
+
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
 
-  .price-controls label {
-    font-size: 16px;
+  .price-controls::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-    display: inline-block;
+    width: 10px;
+    height: 1px;
 
-    width: 50%;
+    content: '';
+    transform: translateX(-50%);
 
-    text-transform: uppercase;
+    background: #000;
   }
+
+
 
   .price-controls input {
     font-family: 'PT Sans', Arial, sans-serif;
-    font-size: 17px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
 
     width: 95px;
+    height: 38px;
     padding: 8px 10px;
 
     text-align: center;
 
     color: #000;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     background: #f7f3ec;
   }
+
 
   .filter-option label {
     font-size: 15px;
@@ -1712,8 +1934,9 @@
 
     content: '';
 
-    border: 2px solid #b5b5b5;
-    border-radius: 3px;
+    background-image: url('../img/checkbox-off.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .filter-input-checkbox:checked+label::after {
@@ -1776,7 +1999,7 @@
 
     min-width: 140px;
     min-height: 38px;
-    margin-top: 75px;
+    margin-top: 50px;
 
     text-align: center;
     text-transform: uppercase;
@@ -2217,21 +2440,31 @@
     color: #000;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
+
+  }
+
+    .pagination-link:hover,
+  .pagination-link:focus {
+    border: 1px solid #bdc6ca;
+  }
+
+  .pagination-link:active {
+    background-color: #ffffff;
+    border: 1px solid #ee3643;
   }
 
   .pagination-link.active {
     color: #fff;
     border: 1px solid #ee3643;
     background-color: #ee3643;
+    outline: none;
   }
 
-  .pagination-link:hover,
-  .pagination-link:focus {
-    border: 1px solid #bdc6ca;
-  }
+  .catalog-info {
+    padding-top: 67px;
+    padding-bottom: 73px;
 
-  .pagination-link:active {
-    border: 1px solid #ee3643;
+    background-color: #f4f7f9;
   }
 
 
@@ -2461,14 +2694,4 @@
   .services-link {
     width: 195px;
     margin-top: 30px;
-  }
-
-
-  /* Стили инфо о перфораторах */
-
-  .catalog-info {
-    padding-top: 67px;
-    padding-bottom: 73px;
-
-    background-color: #f4f7f9;
   }
