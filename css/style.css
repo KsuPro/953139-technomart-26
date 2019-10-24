@@ -94,7 +94,8 @@
   }
 
   .header {
-    height: 320px;
+    min-height: 320px;
+    padding-bottom: 60px;
 
     background-color: #f4f7f9;
   }
@@ -202,6 +203,18 @@
     border: none;
     outline: none;
     background-color: #293449;
+  }
+
+  .search-input::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  .search-input::-moz-placeholder {
+    color: #fff;
+  }
+
+  .search-input:-ms-input-placeholder {
+    color: #fff;
   }
 
   .search-input:hover {
@@ -1116,6 +1129,7 @@
     width: 386px;
     margin: 0;
     margin-bottom: 35px;
+    padding: 0;
   }
 
   .company-partners-item {
@@ -1137,12 +1151,14 @@
     height: 2px;
 
     content: '';
+    transform: translateY(-50%);
 
     background-color: #ee3643;
   }
 
   .contacts-link {
     margin-bottom: 42px;
+
     cursor: pointer;
   }
 
@@ -1155,23 +1171,19 @@
 
   .company .button-red {
     width: 220px;
-    margin: 0;
-    padding: 0;
   }
 
   .contacts .button-red {
-    width: 300px;
-    margin: 0;
-    padding: 0;
+    width: 100%;
   }
 
   .modal-map {
-    display: none;
     position: absolute;
     z-index: 10;
     top: 33px;
     left: 50%;
 
+    display: none;
     display: none;
 
     width: 940px;
@@ -1185,52 +1197,31 @@
   }
 
   .modal-close {
-    font-size: 0;
-
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 9px;
+    right: 9px;
 
-    width: 25px;
-    height: 25px;
-    padding: 0;
+    width: 21px;
+    height: 21px;
 
     cursor: pointer;
 
     border: none;
     outline: none;
     background-color: transparent;
+    background-image: url('../img/icon-close.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  .modal-close::before,
-  .modal-close::after {
-    position: absolute;
-    top: 0;
-    left: 50%;
-
-    width: 5px;
-    height: 25px;
-
-    content: '';
-    transform: translateX(-50%);
-
-    background-color: #ee3643;
-  }
-
-  .modal-close::before {
-    transform: rotate(45deg);
-  }
-
-  .modal-close::after {
-    transform: rotate(-45deg);
-  }
 
   .modal-message {
-    display: none;
     position: fixed;
     z-index: 10;
     top: 50%;
     left: 50%;
+
+    display: none;
 
     width: 620px;
     height: 430px;
@@ -1292,10 +1283,9 @@
     transition-property: border;
 
     color: #a9a9a9;
-    border: solid 2px #d7dcde;
+    border: 2px solid #d7dcde;
     border-radius: 3px;
-      outline: none;
-
+    outline: none;
   }
 
   .modal-message-input {
@@ -1310,12 +1300,12 @@
 
   .modal-message-input:hover,
   .modal-message-textarea:hover {
-    border: solid 2px #b5b5b5;
+    border: 2px solid #b5b5b5;
   }
 
   .modal-message-input:focus,
   .modal-message-textarea:focus {
-    border: solid 2px #ee3643;
+    border: 2px solid #ee3643;
   }
 
 
@@ -1343,16 +1333,17 @@
 
 
   .modal-cart {
-    display: none;
-    position: relative;
+    position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 411px;
     left: 50%;
+
+    display: none;
 
     width: 620px;
     height: 282px;
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 
     background-color: #fff;
     box-shadow: 0 20px 40px 0 rgba(41, 52, 73, .75);
@@ -1399,7 +1390,6 @@
     display: flex;
     justify-content: space-between;
 
-    height: 112px;
     padding: 37px 80px;
 
     background-color: #f1f1f1;
@@ -1413,29 +1403,27 @@
 
   .modal-cart-buttons .modal-cart-continue {
     cursor: pointer;
-    transition-timing-function: linear;
-    transition-duration: .2s;
-    transition-property: border, color;
+    transition-property: border;
 
     color: #000;
+    border: 1px solid #fff;
+    outline: none;
     background-color: #fff;
-      outline: none;
-
   }
 
   .modal-cart-buttons .modal-cart-continue:hover,
   .modal-cart-buttons .modal-cart-continue:focus {
-    border: solid 1px #ee3643;
+    border: 1px solid #ee3643;
   }
 
   .modal-cart-buttons .modal-cart-continue:active {
     color: rgba(50, 66, 92, .3);
-    border: solid 1px #32425c;
+    border: 1px solid #32425c;
   }
 
-.modal-show {
-  display: block;
-}
+  .modal-show {
+    display: block;
+  }
 
   /* Cтили для футера */
 
@@ -1715,7 +1703,7 @@
 
     min-height: 89px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px 30px;
 
     text-transform: uppercase;
@@ -1745,7 +1733,7 @@
     display: flex;
     align-items: center;
 
-    height: 38px;
+    min-height: 38px;
     margin: 0;
     margin-bottom: 20px;
     padding: 5px 18px;
@@ -1757,8 +1745,6 @@
   }
 
   .filter fieldset {
-    position: relative;
-
     width: 100%;
     margin: 0;
     margin-bottom: 15px;
@@ -1795,11 +1781,12 @@
 
   .filter-option {
     margin-bottom: 16px;
-    padding-left: 35px;
   }
 
 
   .range-controls {
+    position: relative;
+
     display: flex;
     align-items: center;
 
@@ -1910,11 +1897,13 @@
 
     display: block;
 
+    padding-left: 35px;
+
     cursor: pointer;
     user-select: none;
   }
 
-  .filter .filter-option:last-child {
+  .filter-option:last-child {
     margin-bottom: 0;
   }
 
@@ -1925,10 +1914,10 @@
   }
 
 
-  .filter-input-checkbox+label::before {
+  .filter-input-checkbox+label::after {
     position: absolute;
     top: 0;
-    left: -35px;
+    left: 0;
 
     width: 23px;
     height: 23px;
@@ -1940,17 +1929,15 @@
     background-position: 0 0;
   }
 
-  .filter-input-checkbox:checked+label::before {
-    
-
+  .filter-input-checkbox:checked+label::after {
     background-image: url('../img/checkbox-on.svg');
-    }
+  }
 
 
   .filter-input-radio+label::before {
     position: absolute;
     top: 0;
-    left: -35px;
+    left: 0;
 
     width: 25px;
     height: 25px;
@@ -1968,7 +1955,7 @@
   .filter-input-radio:checked+label::after {
     position: absolute;
     top: 8px;
-    left: -27px;
+    left: 8px;
 
     width: 9px;
     height: 9px;
@@ -1989,7 +1976,7 @@
     align-items: center;
     justify-content: center;
 
-    min-width: 140px;
+    width: 140px;
     min-height: 38px;
     margin-top: 50px;
 
@@ -2009,17 +1996,14 @@
   }
 
 
-  .catalog-page-wrapper {
+  .catalog-items-wrapper {
     display: flex;
-
-    padding-top: 10px;
   }
 
 
   .sorting {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     height: 38px;
     margin-bottom: 20px;
@@ -2036,7 +2020,7 @@
     font-weight: normal;
     line-height: 18px;
 
-    margin-right: 139px;
+    margin-right: 20px;
 
     text-transform: uppercase;
   }
@@ -2044,12 +2028,10 @@
   .sorting-list {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
 
-    width: 354px;
+    margin-left: auto;
     padding: 0;
 
-    list-style: none;
     list-style: none;
   }
 
@@ -2080,11 +2062,22 @@
     border-bottom: none;
   }
 
+  .price {
+    margin-right: 71px;
+  }
+
+  .type {
+    margin-right: 65px;
+  }
+
+  .function {
+    margin-right: 36px;
+  }
+
   .sorting-range {
     display: flex;
 
     padding: 0;
-    padding-left: 30px;
 
     list-style: none;
   }
@@ -2118,12 +2111,15 @@
     fill: #ee3643;
   }
 
+  .catalog {
+    width: 700px;
+  }
 
   .catalog-wrapper {
     display: flex;
     flex-direction: column;
 
-    width: 700px;
+    padding-bottom: 60px;
   }
 
   .items-title {
@@ -2142,7 +2138,15 @@
   }
 
   .items-title-text {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+
+    margin: 0;
+
     text-transform: uppercase;
+
+    color: #32425c;
   }
 
   .items-title-link {
@@ -2397,7 +2401,6 @@
 
     margin: 0;
     margin-top: 52px;
-    margin-bottom: 60px;
     padding: 0;
 
     list-style: none;
@@ -2411,7 +2414,11 @@
     margin-right: 10px;
   }
 
-  .pagination-item:last-child .pagination-link {
+  .pagination-item:last-child {
+    margin-right: 0;
+  }
+
+  .pagination-link.next-page {
     width: 140px;
   }
 
@@ -2427,12 +2434,12 @@
     width: 38px;
     height: 38px;
 
+    transition-property: border;
     text-transform: uppercase;
 
     color: #000;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
-
   }
 
   .pagination-link:hover,
@@ -2441,15 +2448,15 @@
   }
 
   .pagination-link:active {
-    background-color: #ffffff;
     border: 1px solid #ee3643;
+    background-color: #fff;
   }
 
   .pagination-link.active {
     color: #fff;
     border: 1px solid #ee3643;
-    background-color: #ee3643;
     outline: none;
+    background-color: #ee3643;
   }
 
   .catalog-info {
@@ -2497,8 +2504,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 220px;
-    height: 145px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
   }
 
   .popular-manufacturer-item:hover,

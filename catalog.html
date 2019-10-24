@@ -108,7 +108,7 @@
       </ul>
       <h1 class="catalog-title">Перфораторы</h1>
       <!-- Фильтр товаров -->
-      <div class="catalog-page-wrapper">
+      <div class="catalog-items-wrapper">
         <section class="filters">
           <h2 class="filter-title">Фильтр:</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
@@ -175,9 +175,9 @@
             <div class="sorting">
               <h3 class="sorting-title">Сортировка:</h3>
               <ul class="sorting-list">
-                <li><a class="sorting-list-link active" href="#">По цене</a></li>
-                <li><a class="sorting-list-link" href="#">По типу</a></li>
-                <li><a class="sorting-list-link" href="#">По функционалу</a></li>
+                <li class="price"><a class="sorting-list-link active" href="#">По цене</a></li>
+                <li class="type"><a class="sorting-list-link " href="#">По типу</a></li>
+                <li class="function"><a class="sorting-list-link" href="#">По функционалу</a></li>
               </ul>
               <ul class="sorting-range">
                 <li>
@@ -332,7 +332,7 @@
               <li class="pagination-item"><a class="pagination-link active">1</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
               <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-              <li class="pagination-item"><a class="pagination-link" href="#">Следующая</a></li>
+              <li class="pagination-item"><a class="pagination-link next-page" href="#">Следующая</a></li>
             </ul>
           </div>
         </section>
@@ -344,10 +344,10 @@
         <p class="section-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </div>
     </div>
-    <!-- Млдальное окно корзины -->
+    <!-- Модальное окно корзины -->
     <section class="modal-cart">
       <h2 class="visually-hidden">Окно корзины</h2>
-      <button class="modal-close" type="button" aria-label="Закрыть">x</button>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
       <p class="modal-cart-title">Товар добавлен в корзину!</p>
       <div class="modal-cart-buttons">
         <a class="button-red modal-cart-checkout" href="#">Оформить заказ</a>
