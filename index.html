@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,7 +49,7 @@
         <h1 class="page-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
         <div class="header-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <a class="header-contacts-tel" href="tel:+78125550555">+7(812) 555-05-55</a>
+          <a class="header-contacts-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <!--Личный кабинет-->
@@ -161,8 +162,8 @@
             <div class="flag">новинка</div>
             <a href="#" class="catalog-link">
               <p class="catalog-category">Перфоратор BOSCH BFG 9000</p>
-              <del class="catalog-item-price-old">32 500 ₽</del>
-              <ins class="catalog-item-price">22 500 ₽</ins>
+              <del class="catalog-item-price-old">32500 ₽.</del>
+              <ins class="catalog-item-price">25500 ₽.</ins>
             </a>
             <div class="actions">
               <a class="catalog-item-buy" href="#">Купить</a>
@@ -176,8 +177,8 @@
             <div class="flag">новинка</div>
             <a href="#" class="catalog-link">
               <p class="catalog-category">Перфоратор BOSCH BFG 3000</p>
-              <del class="catalog-item-price-old">22 500 ₽</del>
-              <ins class="catalog-item-price">15 500 ₽</ins>
+              <del class="catalog-item-price-old">22500 ₽.</del>
+              <ins class="catalog-item-price">15500 ₽.</ins>
             </a>
             <div class="actions">
               <a class="catalog-item-buy" href="#">Купить</a>
@@ -191,8 +192,8 @@
             <div class="flag">новинка</div>
             <a href="#" class="catalog-link">
               <p class="catalog-category">Перфоратор BOSCH BFG 6000</p>
-              <del class="catalog-item-price-old">30 500 ₽</del>
-              <ins class="catalog-item-price">25 500 ₽</ins>
+              <del class="catalog-item-price-old">30500 ₽.</del>
+              <ins class="catalog-item-price">25500 ₽.</ins>
             </a>
             <div class="actions">
               <a class="catalog-item-buy" href="#">Купить</a>
@@ -206,7 +207,7 @@
             <div class="flag flag-new">новинка</div>
             <a href="#" class="catalog-link">
               <p class="catalog-category catalog-category-new">Перфоратор BOSCH BFG 2000</p>
-              <p class="catalog-item-price">12500 ₽</p>
+              <p class="catalog-item-price">12500 ₽.</p>
             </a>
             <div class="actions">
               <a class="catalog-item-buy" href="#">Купить</a>
@@ -219,7 +220,7 @@
       <section class="popular-manufacturer">
         <div class="items-title">
           <h2 class="items-title-text">Популярные производители:</h2>
-          <a class="button-red items-title-link" href="#">Все популярные производители</a>
+          <a class="button-red items-title-link" href="#">Все производители</a>
         </div>
         <ul class="popular-manufacturer-list">
           <li class="popular-manufacturer-item">
@@ -369,6 +370,7 @@
               © 2010-2017 Компания "Техномарт"<br>
               Все права защищены
             </p>
+            
             <div class="footer-social">
               <ul>
                 <li>
@@ -409,46 +411,48 @@
 </body>
 
 </html>
-<script type="text/javascript">
-var link = document.querySelector(".write-us-link");
 
-var popup = document.querySelector(".modal-message");
-var close = popup.querySelector(".modal-close");
-var name = popup.querySelector("[name=name]");
+<script type="text/javascript">
+
+var link = document.querySelector(".write-us-link");
+  
+  var popup = document.querySelector(".modal-message");
+  var close = popup.querySelector(".modal-close");
+  var name = popup.querySelector("[name=name]");
 var form = popup.querySelector("form");
 var email = popup.querySelector("[name=email]");
 
 
-link.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  name.focus();
-});
-
-close.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-});
-
-form.addEventListener("submit", function(evt) {
-  if (!name.value || !email.value) {
+  link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    console.log("Нужно ввести логин и пароль");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("name", name.value);
-    }
-  }
-});
-
-window.addEventListener("keydown", function(evt) {
-  if (evt.keyCode === 27) {
+    popup.classList.add("modal-show");
+    name.focus();
+  });
+  
+   close.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
+    popup.classList.remove("modal-show");
+  });
+  
+  form.addEventListener("submit", function (evt) {
+    if (!name.value || !email.value) {
+      evt.preventDefault();
+      console.log("Нужно ввести логин и пароль");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("name", name.value);
+      }
     }
-  }
-});
+  });
+  
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
 
 
 
@@ -460,29 +464,28 @@ window.addEventListener("keydown", function(evt) {
 
 
 
+  
+  var mapLink = document.querySelector(".contacts-link");
 
-var mapLink = document.querySelector(".contacts-link");
-
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
-
-mapLink.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-show");
-});
-
-mapClose.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function(evt) {
-  if (evt.keyCode === 27) {
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+  
+  mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (mapPopup.classList.contains("modal-show")) {
-      mapPopup.classList.remove("modal-show");
-    }
-  }
-});
+    mapPopup.classList.add("modal-show");
+  });
 
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
+      }
+    }
+  });
 </script>
