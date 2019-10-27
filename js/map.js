@@ -1,29 +1,6 @@
-var link = document.querySelector(".write-us-link");
-
-var popup = document.querySelector(".modal-message");
-var close = popup.querySelector(".modal-close");
-
-link.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-});
-
-close.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-});
-
-
-
-
-
-
-
-
 
 
 var mapLink = document.querySelector(".contacts-link-img");
-
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
 
