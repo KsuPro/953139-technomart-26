@@ -68,7 +68,7 @@
     justify-content: center;
 
     width: 100%;
-    min-height: 38px;
+    height: 38px;
     padding-right: 20px;
     padding-left: 20px;
 
@@ -483,6 +483,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 270px;
   }
 
   .header-contacts-tel {
@@ -491,8 +492,6 @@
 
     position: relative;
 
-    min-width: 270px;
-    max-height: 45px;
     margin: 0;
     padding-top: 10px;
     padding-right: 46px;
@@ -1272,7 +1271,9 @@
   .offers-button {
     font-size: 14px;
     line-height: 18px;
-    transform: translateX(3px);
+    -webkit-transform: translateX(3px);
+        -ms-transform: translateX(3px);
+            transform: translateX(3px);
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1439,6 +1440,7 @@
 
     width: 300px;
     height: 158px;
+    background-color: #f4f2ed;
   }
 
   .company .button-red {
@@ -1473,7 +1475,7 @@
 
   .modal-close {
     position: absolute;
-    top: 9px;
+    top: 15px;
     right: 9px;
 
     width: 21px;
@@ -1490,10 +1492,16 @@
   }
 
 
+.modal-map .modal-close {
+      top: 9px;
+
+}
+
+
   .modal-message {
     position: fixed;
     z-index: 10;
-    bottom: 201px;
+    top: 50%;
     left: 50%;
 
     display: none;
@@ -1501,9 +1509,9 @@
     width: 620px;
     height: 430px;
 
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
     background-color: #fff;
     -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
@@ -1563,7 +1571,7 @@
     font-size: 13px;
     line-height: 18px;
 
-    padding: 10px 16px;
+    padding: 5px 16px;
 
     -webkit-transition-timing-function: linear;
     -o-transition-timing-function: linear;
@@ -1601,10 +1609,10 @@
     border: 2px solid #ee3643;
   }
 
-
   .modal-message-textarea {
     width: 460px;
     min-height: 114px;
+    padding: 10px 16px;
 
     resize: none;
 
@@ -1632,7 +1640,7 @@
   .modal-cart {
     position: absolute;
     z-index: 10;
-    top: 411px;
+    top: 50%;
     left: 50%;
 
     display: none;
@@ -1640,9 +1648,9 @@
     width: 620px;
     height: 282px;
 
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
     background-color: #fff;
     -webkit-box-shadow: 0 20px 40px 0 rgba(41, 52, 73, .75);
@@ -2053,7 +2061,9 @@
 
   .breadcrumbs .breadcrumbs-item:first-child {
     padding-left: 0;
-    transform: translateX(-2px);
+    -webkit-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+            transform: translateX(-2px);
   }
 
   .breadcrumbs-item:last-child .breadcrumbs-item-link {
@@ -2110,10 +2120,9 @@
     align-items: center;
     -ms-flex-align: center;
 
-    min-height: 89px;
     margin: 0;
     margin-bottom: 20px;
-    padding: 10px 28px;
+    padding: 30px 28px 29px;
 
     text-transform: uppercase;
 
@@ -2261,7 +2270,9 @@
 
     content: '';
     cursor: pointer;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 
     border: 8px solid #fff;
     border-radius: 50%;
@@ -2335,6 +2346,7 @@
     position: relative;
 
     display: inline-block;
+    vertical-align: baseline;
 
     padding-left: 35px;
 
@@ -2438,9 +2450,8 @@
     justify-content: center;
 
     width: 140px;
-    min-height: 38px;
+    height: 38px;
     margin-top: 51px;
-    padding-top: 10px;
 
 
     text-align: center;
@@ -2477,7 +2488,7 @@
     -ms-flex-align: center;
 
     height: 38px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-right: 7px;
     padding-left: 19px;
 
@@ -2829,7 +2840,7 @@
 
   .catalog-item-buy,
   .catalog-item-bookmarks {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -2979,7 +2990,7 @@
   }
 
   .pagination-link {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
 

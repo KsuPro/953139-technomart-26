@@ -1,12 +1,13 @@
+//слайдер предложения
 var sliderOffers = document.querySelectorAll(".slider-item");
 var sliderControls = document.querySelectorAll(".slider-control");
 var leftOffers = document.querySelector(".js-offers-slider-left");
 var rightOffers = document.querySelector(".js-offers-slider-right");
-var count = 0;
-
+var count;
 
 rightOffers.addEventListener("click", function(evt) {
   evt.preventDefault();
+  count = sliderOffers.length - 1;
 
   for (var i = 0; i < sliderOffers.length; i++) {
     if (sliderOffers[i].classList.contains("active") && i !== sliderOffers.length - 1) {
@@ -21,6 +22,7 @@ rightOffers.addEventListener("click", function(evt) {
 
 leftOffers.addEventListener("click", function(evt) {
   evt.preventDefault();
+  count = 0;
 
   for (var i = 0; i < sliderOffers.length; i++) {
     if (sliderOffers[i].classList.contains("active") && i !== 0) {
@@ -33,7 +35,7 @@ leftOffers.addEventListener("click", function(evt) {
   sliderControls[count].classList.add("active");
 })
 
-
+//слайдер сервисы
 var servicesControls = document.querySelectorAll(".services-slider-control");
 var servicesSlides = document.querySelectorAll(".services-list-item");
 
@@ -47,7 +49,7 @@ for (var i = 0; i < servicesControls.length; i++) {
     }
 
     evt.target.classList.add("active");
-    
+
     for (var x = 0; x < servicesControls.length; x++) {
       if (servicesControls[x].classList.contains("active")) {
         servicesSlides[x].classList.add("active");
